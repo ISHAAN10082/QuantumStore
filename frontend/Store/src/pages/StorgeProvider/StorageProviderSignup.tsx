@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 import axios from 'axios';
 import { StackNavigationProp } from '@react-navigation/stack';
-import { RootStackParamList } from '../../App'; // Adjust the path if needed
+import { RootStackParamList } from '../../../App'; // Adjust the path if needed
 
 type StorageProviderSignupProps = {
   navigation: StackNavigationProp<RootStackParamList, 'StorageProviderSignup'>;

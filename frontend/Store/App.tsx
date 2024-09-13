@@ -3,8 +3,8 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomePage from './src/pages/HomePage';
-import StorageProviderSignup from './src/pages/StorageProviderSignup';
-import StorageDashboard from './src/pages/StorageDashboard';
+import StorageProviderSignup from './src/pages/StorgeProvider/StorageProviderSignup';
+import StorageDashboard from './src/pages/StorgeProvider/StorageDashboard';
 
 const Stack = createStackNavigator();
 
