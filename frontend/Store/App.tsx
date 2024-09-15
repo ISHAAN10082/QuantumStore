@@ -5,8 +5,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomePage from './src/pages/HomePage';
 import StorageProviderSignup from './src/pages/StorgeProvider/StorageProviderSignup';
 import StorageDashboard from './src/pages/StorgeProvider/StorageDashboard';
-import SellerSignup from './src/pages/seller/SellerSignup';
-
+import SellerSignup from './src/pages/Seller/SellerSignup';
+import SellerLogin from './src/pages/Seller/SellerLogin';
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -17,6 +17,7 @@ export default function App() {
         <Stack.Screen name="StorageProviderSignup" component={StorageProviderSignup} />
         <Stack.Screen name="StorageDashboard" component={StorageDashboard} />
         <Stack.Screen name="SellerSignup" component={SellerSignup} />
+        <Stack.Screen name="SellerLogin" component={SellerLogin} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -27,6 +28,7 @@ export type RootStackParamList = {
   StorageProviderSignup: undefined;
   StorageDashboard: undefined;
   SellerSignup: undefined;
+  SellerLogin: undefined;
 };
 
 

@@ -5,6 +5,9 @@ import { ThemedText } from '../../components/ThemedText';
 import { ThemedView } from '../../components/ThemedView';
 import { CustomButton } from '../../components/CustomButton';
 
+// Update the image import path
+
+
 const SellerLogin = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -21,7 +24,7 @@ const SellerLogin = () => {
   return (
     <ThemedView style={styles.container}>
       <Image
-        source={require('../../../assets/images/logo.png')}
+        source={require('../../../assets/images/prokraya.png')}
         style={styles.logo}
         resizeMode="contain"
       />
@@ -40,7 +43,7 @@ const SellerLogin = () => {
         onChangeText={setPassword}
         secureTextEntry
       />
-      <CustomButton title="Login" onPress={handleLogin} />
+      <CustomButton title="Login" onPress={() => navigation.navigate('SellerDashboard' as never)} />
       <TouchableOpacity
         style={styles.linkContainer}
         onPress={() => navigation.navigate('SellerSignup' as never)}
@@ -53,15 +56,20 @@ const SellerLogin = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 0,
     padding: 20,
     justifyContent: 'center',
     alignItems: 'center',
+    borderRadius: 10,
+    width: '80%',
+    alignSelf: 'center',
+    marginTop: 100,
+    marginBottom: 'auto',
   },
   logo: {
-    width: 150,
-    height: 150,
-    marginBottom: 30,
+    width: 50,
+    height: 50,
+    marginBottom: 20,
   },
   title: {
     fontSize: 24,

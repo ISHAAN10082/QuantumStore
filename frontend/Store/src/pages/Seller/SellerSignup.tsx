@@ -65,6 +65,7 @@ const SellerSignup = () => {
           onChangeText={setConfirmPassword}
           secureTextEntry
         />
+        
         <CustomButton title="Sign Up" onPress={handleSignup} />
         <TouchableOpacity
           style={styles.linkContainer}
@@ -83,11 +84,16 @@ const styles = StyleSheet.create({
     padding: 20,
     justifyContent: 'center',
     alignItems: 'center',
+    borderRadius: 10,
+    width: '80%',
+    alignSelf: 'center',
+    height: '70%',
+    marginTop: 100,
   },
   logo: {
     width: 150,
-    height: 150,
-    marginBottom: 30,
+    height: 50,
+    marginBottom: 0,
   },
   title: {
     fontSize: 24,
