@@ -63,9 +63,7 @@ const HomePage: React.FC<HomePageProps> = ({ navigation }) => {
         <View style={styles.button}>
           <Button
             title="Sign Up as Seller"
-            onPress={() => {
-              // Navigation logic for seller sign-up
-            }}
+            onPress={() => navigation.navigate('SellerSignup')}
           />
         </View>
       </View>
